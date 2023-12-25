@@ -1,21 +1,5 @@
 ﻿// Задача 3: Задайте произвольную строку. Выясните, является ли она палиндромом.
 
-void ReverseString(char[] str)
-{
-    int left = 0;
-    int right = str.Length - 1;
-
-    while (left < right)
-    {
-        char temp = str[left];
-        str[left] = str[right];
-        str[right] = temp;
-
-        left++;
-        right--;
-    }
-}
-
 bool IsPalindrome(char[] str)
 {
     int left = 0;
@@ -52,9 +36,5 @@ Console.Write("Введите строку для проверки на пали
 string input = Console.ReadLine();
 char[] str = input.ToCharArray();
 
-
-ReverseString(str);
 IsPalindrome(str);
 Condition(str);
-
-
